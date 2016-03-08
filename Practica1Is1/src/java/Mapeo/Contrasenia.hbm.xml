@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 8/03/2016 05:51:11 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Mapeo.Contrasenia" table="contrasenia" schema="public" optimistic-lock="version">
+        <composite-id name="id" class="Mapeo.ContraseniaId">
+            <key-property name="idContrasenia" type="int">
+                <column name="id_contrasenia" />
+            </key-property>
+            <key-property name="idUsuario" type="int">
+                <column name="id_usuario" />
+            </key-property>
+        </composite-id>
+        <property name="contrasenia" type="int">
+            <column name="contrasenia" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -5,6 +5,8 @@
     <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
     <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/Practica1</property>
     <property name="hibernate.connection.username">IS1</property>
-    <property name="hibernate.connection.pool_size">hola123</property>
+    <property name="hibernate.connection.password">hola123</property>
+    <mapping resource="Mapeo/Contrasenia.hbm.xml"/>
+    <mapping resource="Mapeo/Usuario.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>
