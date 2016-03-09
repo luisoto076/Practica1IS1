@@ -1,6 +1,6 @@
 package controlador;
 
-import DAO.Usuario;
+import Mapeo.Usuario;
 import java.util.List;
 
 /**

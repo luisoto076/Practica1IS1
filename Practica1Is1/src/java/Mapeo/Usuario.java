@@ -52,9 +52,15 @@ public class Usuario  implements java.io.Serializable {
     public void setMail(String mail) {
         this.mail = mail;
     }
-
-
-
+     
+    public String toString(){
+        String s =
+       this.idUsuario+"\n"+
+       this.nombre +"\n"+
+       this.app +"\n"+
+       this.mail +"\n";
+        return s;
+    }
 
 }
 
